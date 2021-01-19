@@ -10,8 +10,8 @@ document
 
     // Obtener valores del html
     const nombre = document.getElementById("nombre").value,
-      correo = document.getElementById("telefono").value,
-      telefono = document.getElementById("correo").value;
+      telefono= document.getElementById("telefono").value,
+      correo = document.getElementById("correo").value;
 
     // Create a new Object Product
     const contacto = new Contactos(nombre, telefono, correo);

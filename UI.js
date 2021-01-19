@@ -7,7 +7,7 @@ export class UI {
       element.innerHTML = `
               <div class="card text-center mb-4">
                   <div class="card-body">
-                      <strong>Contacto</strong>: ${contacto.nombre} -
+                      <strong>Nombre</strong>: ${contacto.nombre} -
                       <strong>Teléfono</strong>: ${contacto.telefono} - 
                       <strong>Correo</strong>: ${contacto.correo}
                       <a href="#" class="btn btn-danger" name="delete">Delete</a>
@@ -24,7 +24,7 @@ export class UI {
     eliminarContacto(element) {
       if (element.name === "delete") {
         element.parentElement.parentElement.remove();
-        this.showMessage("Contacto eliminado", "success");
+        this.mostrarMensaje("Contacto eliminado", "success");
       }
     }
   
